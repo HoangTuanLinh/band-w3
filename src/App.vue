@@ -1,26 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Nav></Nav>
+  <slider></slider>
+  <the-band></the-band>
+  <tour-date></tour-date>
+  <Contact></Contact>
+  <img src="./assets/imgs/map.jpg" alt="map">
+  <Footer></Footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Nav from './components/Nav.vue'
+import slider from './components/silder.vue'
+import TheBand from './components/TheBand.vue'
+import TourDate from './components/TourDate.vue'
+import Contact from './components/Contact.vue'
+import Footer from './components/Footer.vue'
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    Nav,
+    slider,
+    TheBand,
+    TourDate,
+    Contact,
+    Footer,
+}
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+
 </style>
